@@ -19,7 +19,7 @@ SET(luasrc
 	   ${CMAKE_CURRENT_SOURCE_DIR}/html.lua 
 	   ${CMAKE_CURRENT_SOURCE_DIR}/ascii.lua)
 
-ADD_LIBRARY("sundown" MODULE ${src})
+ADD_LIBRARY("sundown" SHARED ${src})
 SET_TARGET_PROPERTIES("sundown" PROPERTIES
   PREFIX "lib"
   IMPORT_PREFIX "lib")
